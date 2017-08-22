@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCell" id="1ga-ck-Fye" customClass="MyGalleryCell" customModule="MysoreApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="269"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="269"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="palace" translatesAutoresizingMaskIntoConstraints="NO" id="fRC-2M-sis">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="130.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fRC-2M-sis" secondAttribute="height" multiplier="4:3" id="j4X-pf-W8Y"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sab-zH-twm">
+                        <rect key="frame" x="15" y="112.5" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="Sa0-zK-oxf"/>
+                            <constraint firstAttribute="height" constant="36" id="qBg-lj-oEB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mysore Palace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXD-1C-WXr">
+                        <rect key="frame" x="15" y="150.5" width="149" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Rca-vu-SfO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It was the official residence of the former royal family Mysore and..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePj-GW-6y7">
+                        <rect key="frame" x="15" y="172.5" width="149" height="60.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tw-Ty-lrt">
+                        <rect key="frame" x="0.0" y="233" width="174" height="36"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QF-1k-QtB">
+                                <rect key="frame" x="0.0" y="1" width="86.5" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="120" image="icn_fav">
+                                    <color key="titleColor" red="0.40387445690000001" green="0.40394866470000002" blue="0.4038697779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mc-1y-AgB">
+                                <rect key="frame" x="87.5" y="1" width="86.5" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="120" image="icn_chat">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5QF-1k-QtB" secondAttribute="bottom" id="Bi0-wJ-Sa0"/>
+                            <constraint firstItem="2mc-1y-AgB" firstAttribute="height" secondItem="5QF-1k-QtB" secondAttribute="height" id="F54-Tw-Q5u"/>
+                            <constraint firstAttribute="height" constant="36" id="Kd2-Sf-7Lj"/>
+                            <constraint firstAttribute="bottom" secondItem="2mc-1y-AgB" secondAttribute="bottom" id="LWx-Br-lJc"/>
+                            <constraint firstAttribute="trailing" secondItem="2mc-1y-AgB" secondAttribute="trailing" id="SsF-wK-Pyj"/>
+                            <constraint firstItem="2mc-1y-AgB" firstAttribute="top" secondItem="3tw-Ty-lrt" secondAttribute="top" constant="1" id="ZEf-5B-J9Y"/>
+                            <constraint firstItem="5QF-1k-QtB" firstAttribute="top" secondItem="3tw-Ty-lrt" secondAttribute="top" constant="1" id="hFW-xJ-l1C"/>
+                            <constraint firstItem="2mc-1y-AgB" firstAttribute="leading" secondItem="5QF-1k-QtB" secondAttribute="trailing" constant="1" id="kQb-Yz-xFe"/>
+                            <constraint firstItem="2mc-1y-AgB" firstAttribute="width" secondItem="5QF-1k-QtB" secondAttribute="width" id="l7a-tj-g5k"/>
+                            <constraint firstItem="5QF-1k-QtB" firstAttribute="leading" secondItem="3tw-Ty-lrt" secondAttribute="leading" id="oRX-3s-iYM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fXD-1C-WXr" firstAttribute="leading" secondItem="1ga-ck-Fye" secondAttribute="leading" constant="15" id="0R9-8x-MXL"/>
+                <constraint firstAttribute="trailing" secondItem="3tw-Ty-lrt" secondAttribute="trailing" id="0eg-Ru-pB2"/>
+                <constraint firstItem="sab-zH-twm" firstAttribute="bottom" secondItem="fRC-2M-sis" secondAttribute="bottom" constant="18" id="2q6-Af-q1L"/>
+                <constraint firstItem="ePj-GW-6y7" firstAttribute="leading" secondItem="1ga-ck-Fye" secondAttribute="leading" constant="15" id="5kV-lp-SSq"/>
+                <constraint firstItem="fXD-1C-WXr" firstAttribute="top" secondItem="sab-zH-twm" secondAttribute="bottom" constant="2" id="GXj-Gj-Apq"/>
+                <constraint firstAttribute="bottom" secondItem="3tw-Ty-lrt" secondAttribute="bottom" id="MaX-UC-Lbr"/>
+                <constraint firstAttribute="trailing" secondItem="fXD-1C-WXr" secondAttribute="trailing" constant="10" id="eIn-LS-ks6"/>
+                <constraint firstItem="ePj-GW-6y7" firstAttribute="top" secondItem="fXD-1C-WXr" secondAttribute="bottom" id="eVo-3g-J0A"/>
+                <constraint firstItem="3tw-Ty-lrt" firstAttribute="top" secondItem="ePj-GW-6y7" secondAttribute="bottom" id="kxe-ce-41n"/>
+                <constraint firstItem="sab-zH-twm" firstAttribute="leading" secondItem="1ga-ck-Fye" secondAttribute="leading" constant="15" id="nux-ow-aaR"/>
+                <constraint firstItem="fRC-2M-sis" firstAttribute="leading" secondItem="1ga-ck-Fye" secondAttribute="leading" id="pif-U1-GNa"/>
+                <constraint firstAttribute="trailing" secondItem="ePj-GW-6y7" secondAttribute="trailing" constant="10" id="w8d-la-vWF"/>
+                <constraint firstAttribute="trailing" secondItem="fRC-2M-sis" secondAttribute="trailing" id="wff-Je-LOr"/>
+                <constraint firstItem="fRC-2M-sis" firstAttribute="top" secondItem="1ga-ck-Fye" secondAttribute="top" id="zAd-0J-ZdS"/>
+                <constraint firstItem="3tw-Ty-lrt" firstAttribute="leading" secondItem="1ga-ck-Fye" secondAttribute="leading" id="zRZ-IM-C9a"/>
+            </constraints>
+            <connections>
+                <outlet property="commentsCountLabel" destination="2mc-1y-AgB" id="CaY-kD-7wt"/>
+                <outlet property="galleryImageView" destination="fRC-2M-sis" id="aCJ-h4-gYt"/>
+                <outlet property="galleryTitleDescription" destination="ePj-GW-6y7" id="TQ3-Hb-sgg"/>
+                <outlet property="galleryTitleLabel" destination="fXD-1C-WXr" id="ncf-sW-Ncf"/>
+                <outlet property="likeCountLabel" destination="5QF-1k-QtB" id="HBI-QY-5ml"/>
+                <outlet property="userImageView" destination="sab-zH-twm" id="Uug-yq-KJg"/>
+            </connections>
+            <point key="canvasLocation" x="-178" y="150"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icn_chat" width="17" height="16"/>
+        <image name="icn_fav" width="17" height="16"/>
+        <image name="palace" width="200" height="134"/>
+    </resources>
+</document>

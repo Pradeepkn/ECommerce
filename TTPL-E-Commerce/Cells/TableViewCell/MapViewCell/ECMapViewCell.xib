@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyMapViewCell" rowHeight="242" id="KGk-i7-Jjw" customClass="MyMapViewCell" customModule="MysoreApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="242"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="241.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gs0-Fw-9bu">
+                        <rect key="frame" x="8" y="8" width="304" height="226"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFn-zE-K84">
+                                <rect key="frame" x="1" y="185" width="302" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Q61-aT-cyE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Share this location">
+                                    <color key="titleColor" red="0.46640592103133316" green="0.49479325024838738" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareLocationButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2ta-4F-FFm"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDB-so-IcY">
+                                <rect key="frame" x="1" y="1" width="302" height="184"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="xGN-LS-Yae"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BFn-zE-K84" firstAttribute="top" secondItem="dDB-so-IcY" secondAttribute="bottom" id="Bv1-Sz-qKg"/>
+                            <constraint firstAttribute="trailing" secondItem="BFn-zE-K84" secondAttribute="trailing" constant="1" id="CTL-9f-p4R"/>
+                            <constraint firstItem="BFn-zE-K84" firstAttribute="leading" secondItem="Gs0-Fw-9bu" secondAttribute="leading" constant="1" id="DSN-6w-zTW"/>
+                            <constraint firstAttribute="trailing" secondItem="dDB-so-IcY" secondAttribute="trailing" constant="1" id="HOd-R9-NFS"/>
+                            <constraint firstItem="dDB-so-IcY" firstAttribute="top" secondItem="Gs0-Fw-9bu" secondAttribute="top" constant="1" id="Hv6-UY-Tib"/>
+                            <constraint firstAttribute="bottom" secondItem="BFn-zE-K84" secondAttribute="bottom" constant="1" id="Jwx-ee-KBI"/>
+                            <constraint firstItem="dDB-so-IcY" firstAttribute="leading" secondItem="Gs0-Fw-9bu" secondAttribute="leading" constant="1" id="Yo9-xI-skl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gs0-Fw-9bu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0Xu-pC-uPw"/>
+                    <constraint firstAttribute="trailing" secondItem="Gs0-Fw-9bu" secondAttribute="trailing" constant="8" id="CYI-ql-Y12"/>
+                    <constraint firstAttribute="bottom" secondItem="Gs0-Fw-9bu" secondAttribute="bottom" constant="7.5" id="M7X-sB-CKf"/>
+                    <constraint firstItem="Gs0-Fw-9bu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="lRL-Mp-joT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mapView" destination="dDB-so-IcY" id="yn5-9o-31A"/>
+                <outlet property="shareLocationButton" destination="BFn-zE-K84" id="IXG-xL-vWg"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="131"/>
+        </tableViewCell>
+    </objects>
+</document>
