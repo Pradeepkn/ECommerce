@@ -162,13 +162,13 @@
 			isa = PBXGroup;
 			children = (
 				27EB414C1F4C088900A630F7 /* AppDelegate */,
+				27EB41A01F4C088A00A630F7 /* ViewControllers */,
 				27EB414F1F4C088900A630F7 /* Catagories */,
 				27EB41591F4C088900A630F7 /* Cells */,
 				27EB417B1F4C088A00A630F7 /* CouchBaseManager */,
 				27EB417F1F4C088A00A630F7 /* HelperClasses */,
 				27EB418D1F4C088A00A630F7 /* Network */,
 				27EB419E1F4C088A00A630F7 /* ThirdParty */,
-				27EB41A01F4C088A00A630F7 /* ViewControllers */,
 				27EB413B1F4C073600A630F7 /* Main.storyboard */,
 				27EB41411F4C073600A630F7 /* Assets.xcassets */,
 				27EB41431F4C073600A630F7 /* LaunchScreen.storyboard */,

@@ -153,7 +153,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="97v-wr-X6m">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.22686213254928589" green="0.23792967200279236" blue="0.30428576469421387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yqo-hE-dF7">
                                     <size key="itemSize" width="151" height="206"/>
                                     <size key="headerReferenceSize" width="0.0" height="140"/>
@@ -170,7 +170,7 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MyMenuHeaderView" reuseIdentifier="MenuHeaderViewIdentifier" id="7x3-tb-UUo" customClass="MyMenuHeaderView" customModule="TTPL_E_Commerce" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ECMenuHeaderView" reuseIdentifier="MenuHeaderViewIdentifier" id="7x3-tb-UUo" customClass="ECMenuHeaderView" customModule="TTPL_E_Commerce" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -186,10 +186,9 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jessica Taylor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpb-VY-45Y" customClass="VerticalAlignLabel" customModule="TTPL_E_Commerce" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarento Technologies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpb-VY-45Y" customClass="VerticalAlignLabel" customModule="TTPL_E_Commerce" customModuleProvider="target">
                                             <rect key="frame" x="100" y="0.0" width="195" height="65"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bengaluru, India" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHp-yt-g4k" customClass="VerticalAlignLabel" customModule="TTPL_E_Commerce" customModuleProvider="target">
@@ -208,6 +207,7 @@
                                             <state key="normal" image="icn_setting"/>
                                         </button>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="lhq-9d-I7n" firstAttribute="leading" secondItem="rpb-VY-45Y" secondAttribute="trailing" id="8WP-Ao-ywI"/>
                                         <constraint firstAttribute="bottom" secondItem="wHp-yt-g4k" secondAttribute="bottom" id="Da0-JO-QWe"/>

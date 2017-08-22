@@ -119,11 +119,11 @@ class ECGalleryViewController: UICollectionViewController, UICollectionViewDeleg
         let galleryItem : ECGalleryItems = dataSource[indexPath.row]
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let myGalleryDetailViewController = storyBoard.instantiateViewController(withIdentifier: ECGalleryDetailViewController.className) as! ECGalleryDetailViewController
-        myGalleryDetailViewController.galleryItem = galleryItem
-        myGalleryDetailViewController.galleryDataSource = dataSource
-        myGalleryDetailViewController.selectedIndex = indexPath.row
-        self.navigationController?.pushViewController(myGalleryDetailViewController, animated: true)
+        let ecGalleryDetailViewController = storyBoard.instantiateViewController(withIdentifier: ECGalleryDetailViewController.className) as! ECGalleryDetailViewController
+        ecGalleryDetailViewController.galleryItem = galleryItem
+        ecGalleryDetailViewController.galleryDataSource = dataSource
+        ecGalleryDetailViewController.selectedIndex = indexPath.row
+        self.navigationController?.pushViewController(ecGalleryDetailViewController, animated: true)
     }
     
 }

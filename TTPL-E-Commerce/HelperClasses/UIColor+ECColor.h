@@ -22,6 +22,10 @@
 
 + (UIColor *)pageMenuBg;
 
++ (UIColor *)selectedMenuBg;
+    
++ (UIColor *)selectedPageMenuLabel;
+    
 + (UIColor *)unselectedPageMenuLabel;
 
 @end

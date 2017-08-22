@@ -18,7 +18,7 @@ class ECMenuViewController: UIViewController, UICollectionViewDataSource, UIColl
     let reuseIdentifier = "ECMenuCellIdentifier" // also enter this string as the cell identifier in the storyboard
     let menuHeaderIdentifier = "MenuHeaderViewIdentifier"
     
-    var menuArray : [String] = ["Home", "Local News", "Movies", "Transit", "Civic", "Dasara", "Jobs", "Blood Bank"]
+    var menuArray : [String] = ["Home", "Projects", "Q&A", "Achivements", "Gallery", "Fun", "Career", "Info"]
     
     var menuItemsLiveQuery: CBLLiveQuery!
     var menuItemRows : [CBLQueryRow]?
@@ -138,12 +138,12 @@ class ECMenuViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width:self.menuCollectionView.frame.size.width, height:150)
+        return CGSize(width:self.menuCollectionView.frame.size.width, height:100)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header:ECMenuHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: menuHeaderIdentifier, for: indexPath) as! ECMenuHeaderView
-        header.profileName?.text = "Jessica Tyalor"
+        header.profileName?.text = "Tarento Technologies"
         header.profileAddress?.text = "Bengaluru, India"
         header.profileImageView?.image = UIImage(named: "mood3")
         header.profileName.verticalAlignment = .bottom
@@ -169,11 +169,11 @@ class ECMenuViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ECMenuCell
         
-        let myMenuItem : ECMenuItems = self.menuItemsArray[indexPath.row]
-        cell.menuCellImageView?.image = UIImage(named: (myMenuItem.menuItemImageName))
-        cell.menuItemTitleLabel?.text = myMenuItem.menuItemName
+        let ecMenuItem : ECMenuItems = self.menuItemsArray[indexPath.row]
+        cell.menuCellImageView?.image = UIImage(named: (ecMenuItem.menuItemImageName))
+        cell.menuItemTitleLabel?.text = ecMenuItem.menuItemName
         if self.selectedIndex == indexPath.row {
-            cell.backgroundColor = UIColor.subTheme()
+            cell.backgroundColor = UIColor.selectedMenuBg()
         }else {
             cell.backgroundColor = UIColor.menuItemBg()
         }

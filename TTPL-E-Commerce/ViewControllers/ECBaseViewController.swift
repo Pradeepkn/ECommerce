@@ -11,18 +11,18 @@ import SlideMenuControllerSwift
 
 enum selctedMenuItem : Int {
     case All
-    case Movies
-    case Attractions
+    case iOS
+    case Android
     case Events
-    case Temples
+    case Mobility
 }
 
 // Define identifier
 let refreshGalleryNotificationIdentifier = Notification.Name("RefreshGalleryNotificationIdentifier")
 
 enum GalleryCategory : String {
-    case All = "All", Movies = "Movies", Attractions = "Attractions", Events = "Events", Temples = "Temples"
-    static let allValues = [All, Movies, Attractions, Events, Temples]
+    case All = "All", iOS = "iOS", Android = "Android", Events = "Events", Mobility = "Mobility"
+    static let allValues = [All, iOS, Android, Events, Mobility]
 }
 
 private let nibNameIdentifier = "ECGalleryViewController"
@@ -79,35 +79,35 @@ class ECBaseViewController: UIViewController, CAPSPageMenuDelegate {
                 allGalleryVC.selectedGalleryType = GalleryCategory.All
                 controllerArray.append(allGalleryVC)
                 self.initializeAllGalleryItems(allController: allGalleryVC, dbName: GalleryCategory.All.rawValue, galleryType: GalleryCategory.All)
-            case .Movies:
-                let moviesGalleryVC : ECGalleryViewController = ECGalleryViewController(nibName: nibNameIdentifier, bundle: nil)
-                moviesGalleryVC.title = GalleryCategory.Movies.rawValue
-                controllerArray.append(moviesGalleryVC)
-                self.initializeAllGalleryItems(allController: moviesGalleryVC, dbName: GalleryCategory.Movies.rawValue, galleryType: GalleryCategory.Movies)
-            case .Attractions:
+            case .iOS:
+                let iOSGalleryVC : ECGalleryViewController = ECGalleryViewController(nibName: nibNameIdentifier, bundle: nil)
+                iOSGalleryVC.title = GalleryCategory.iOS.rawValue
+                controllerArray.append(iOSGalleryVC)
+                self.initializeAllGalleryItems(allController: iOSGalleryVC, dbName: GalleryCategory.iOS.rawValue, galleryType: GalleryCategory.iOS)
+            case .Android:
                 let attractionGalleryVC : ECGalleryViewController = ECGalleryViewController(nibName: nibNameIdentifier, bundle: nil)
-                attractionGalleryVC.title = GalleryCategory.Attractions.rawValue
+                attractionGalleryVC.title = GalleryCategory.Android.rawValue
                 controllerArray.append(attractionGalleryVC)
-                self.initializeAllGalleryItems(allController: attractionGalleryVC, dbName: GalleryCategory.Attractions.rawValue, galleryType: GalleryCategory.Attractions)
+                self.initializeAllGalleryItems(allController: attractionGalleryVC, dbName: GalleryCategory.Android.rawValue, galleryType: GalleryCategory.Android)
             case .Events:
                 let eventsGalleryVC : ECGalleryViewController = ECGalleryViewController(nibName: nibNameIdentifier, bundle: nil)
                 eventsGalleryVC.title = GalleryCategory.Events.rawValue
                 controllerArray.append(eventsGalleryVC)
                 self.initializeAllGalleryItems(allController: eventsGalleryVC, dbName: GalleryCategory.Events.rawValue, galleryType: GalleryCategory.Events)
-            case .Temples:
+            case .Mobility:
                 let templeGalleryVC : ECGalleryViewController = ECGalleryViewController(nibName: nibNameIdentifier, bundle: nil)
-                templeGalleryVC.title = GalleryCategory.Temples.rawValue
+                templeGalleryVC.title = GalleryCategory.Mobility.rawValue
                 controllerArray.append(templeGalleryVC)
-                self.initializeAllGalleryItems(allController: templeGalleryVC, dbName: GalleryCategory.Temples.rawValue, galleryType: GalleryCategory.Temples)
+                self.initializeAllGalleryItems(allController: templeGalleryVC, dbName: GalleryCategory.Mobility.rawValue, galleryType: GalleryCategory.Mobility)
             }
         }
         
         // Customize menu (Optional)
         let parameters: [CAPSPageMenuOption] = [
-            .ScrollMenuBackgroundColor(UIColor.pageMenuBg()),
+            .ScrollMenuBackgroundColor(UIColor.selectedPageMenuLabel()),
             .MenuItemSeparatorWidth(0.0),
-            .ViewBackgroundColor(UIColor.theme()),
-            .SelectionIndicatorColor(UIColor.theme()),
+            .ViewBackgroundColor(UIColor.selectedPageMenuLabel()),
+            .SelectionIndicatorColor(UIColor.selectedPageMenuLabel()),
             .MenuItemFont(UIFont(name: "HelveticaNeue", size: 14.0)!),
             .MenuMargin(0.0),
             .MenuHeight(40.0),
@@ -332,13 +332,13 @@ class ECBaseViewController: UIViewController, CAPSPageMenuDelegate {
         case 0:
             subview.selectedGalleryType = .All
         case 1:
-            subview.selectedGalleryType = .Movies
+            subview.selectedGalleryType = .iOS
         case 2:
-            subview.selectedGalleryType = .Attractions
+            subview.selectedGalleryType = .Android
         case 3:
             subview.selectedGalleryType = .Events
         case 4:
-            subview.selectedGalleryType = .Temples
+            subview.selectedGalleryType = .Mobility
         default:
             break
         }
