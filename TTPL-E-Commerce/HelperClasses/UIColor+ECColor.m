@@ -26,7 +26,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 }
 
 + (UIColor *)navigationBar {
-    return RGBACOLOR(98, 181, 75, 1.0);
+    return RGBACOLOR(38, 143, 141, 1.0);
 }
 
 + (UIColor *)menuBg {
@@ -34,23 +34,23 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 }
 
 + (UIColor *)menuItemBg {
-    return RGBACOLOR(98, 181, 75, 1.0);
+    return RGBACOLOR(112,181,180, 1.0);
 }
 
 + (UIColor *)pageMenuBg {
-    return RGBACOLOR(168,214,156, 1.0);
+    return RGBACOLOR(112,181,180, 1.0);
 }
     
 + (UIColor *)selectedMenuBg {
-    return RGBACOLOR(63,116,48, 1.0);
+    return RGBACOLOR(38, 143, 141, 1.0);
 }
 
 + (UIColor *)selectedPageMenuLabel {
-    return RGBACOLOR(63,116,48, 1.0);
+    return RGBACOLOR(38, 143, 141, 1.0);
 }
     
 + (UIColor *)unselectedPageMenuLabel {
-    return RGBACOLOR(170, 215, 158, 1.0);
+    return RGBACOLOR(24, 40, 59, 1.0);
 }
 
 @end

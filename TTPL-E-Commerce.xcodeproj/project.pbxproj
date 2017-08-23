@@ -363,8 +363,8 @@
 				27EB41E71F4C09E100A630F7 /* ViewControllerExtension.swift */,
 				27EB41F41F4C09FE00A630F7 /* UIImage+ImageEffects.h */,
 				27EB41F51F4C09FE00A630F7 /* UIImage+ImageEffects.m */,
-				27EB41F81F4C0FA200A630F7 /* UIColor+ECColor.m */,
 				27EB41F91F4C0FA200A630F7 /* UIColor+ECColor.h */,
+				27EB41F81F4C0FA200A630F7 /* UIColor+ECColor.m */,
 			);
 			path = HelperClasses;
 			sourceTree = "<group>";

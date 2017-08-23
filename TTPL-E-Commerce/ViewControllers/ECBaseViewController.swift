@@ -104,9 +104,9 @@ class ECBaseViewController: UIViewController, CAPSPageMenuDelegate {
         
         // Customize menu (Optional)
         let parameters: [CAPSPageMenuOption] = [
-            .ScrollMenuBackgroundColor(UIColor.selectedPageMenuLabel()),
+            .ScrollMenuBackgroundColor(UIColor.pageMenuBg()),
             .MenuItemSeparatorWidth(0.0),
-            .ViewBackgroundColor(UIColor.selectedPageMenuLabel()),
+            .ViewBackgroundColor(UIColor.pageMenuBg()),
             .SelectionIndicatorColor(UIColor.selectedPageMenuLabel()),
             .MenuItemFont(UIFont(name: "HelveticaNeue", size: 14.0)!),
             .MenuMargin(0.0),
